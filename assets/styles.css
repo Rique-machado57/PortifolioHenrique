@@ -1,0 +1,205 @@
+/**
+Estilos para o corpo da página
+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    scroll-behavior: smooth!important;
+}
+
+/**
+Menu e logo CSS
+ */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Estilos para a logo */
+.logo img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Estilos Responsivos CSS */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/**
+Estilos para as seções
+ */
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/**
+Seção Sobre Mim
+ */
+#sobre {
+    background-color: #37B8C8;
+}
+
+/**
+Seção Formação
+ */
+#formacao {
+    background-color: #302C98;
+    color: white;
+}
+#formacao li{
+    overflow: hidden;
+}
+
+#portfolio {
+    background-color: #37B8C8;
+}
+
+#contato {
+    background-color: #302C98;
+    color: white;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #37B8C8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #302C98;
+}
+
+/**
+Estilos para o rodapé
+ */
+
+/* Estilos css para o rodapé */
+.footer-container {
+    background-color: #37B8C8;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p, .footer-column ul, .footer-column li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #302C98;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding-left: 0;
+    }
+}
